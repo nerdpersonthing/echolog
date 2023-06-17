@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "echolog"
+version = "0.0.2"
+authors = [
+  { name="nerdpersonthing" },
+]
+description = "A logging package that adds an echo() function to return both the input expression/variable and its results. Also sets up nicely-formatted logging."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "os",
+  "re",
+  "inspect",
+  "logging",
+  "datetime",
+  "dotmap",
+  "ansicon; os_name == 'nt'",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nerdpersonthing/echolog"
